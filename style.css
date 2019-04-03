@@ -42,14 +42,25 @@ html{
 /*Texto*/
 .title{
     width: 560px;
+    padding-top: 5px;
     padding-left: 20px;
     background-color: #3498DB;
     font-size: 24px;
     font-weight: bold;
+    color: white;
+}
+
+.subtitle{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-indent: 0px;
+    font-weight: bold;
+    color: black;
 }
 
 .text{
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     width: 560px;
     text-indent: 24px;
@@ -57,6 +68,10 @@ html{
 
 a{
     text-decoration: none;
+    color: black;
+}
+
+a:visited {
     color: black;
 }
 
