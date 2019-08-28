@@ -1,87 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html{
     padding: 0px;
     margin: 0px;
+    height: 100%; 
 }
 
-.container{
-    width: 600px;
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #78909c; 
 }
 
-.main{
-    border: 1px solid #BEBEBE;
-    box-shadow: 1px 1px #e4e4e4;
+footer {
+	height: 35px;
+	border-bottom: 1px solid black; 
 }
 
-.header{    
-    font-family: 'Overpass';
+.container {
+	margin-left: auto;
+	margin-right: auto;
+    width: 500px;  
 }
 
-.content{ 
-    font-family: 'Overpass';
+.row {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #000;
+	height: 5px;
+	width: 100%;
 }
 
-/*Imagens*/
-.logo-image{
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    padding-top: 10px;
+li {
+	padding: 5px;
+	list-style-type: none;
 }
 
-.common-image{
-    width: 560px;
-    height: 200px;
-    text-align: center;
-    background-color: black;
-    color: white;
+ul {
+	min-height: 130px;
 }
 
 /*Texto*/
-.title{
-    width: 560px;
-    padding-top: 5px;
-    padding-left: 20px;
-    background-color: #3498DB;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-.subtitle{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    text-indent: 0px;
-    font-weight: bold;
-    color: black;
-}
-
-.text{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    width: 560px;
-    text-indent: 24px;
-}
+h1 { 
+    font-size: 16px;
+    border-bottom: 1px solid black; 
+} 
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 a:visited {
     color: black;
 }
 
-/*Separadores*/
-.row-one{
-    height: 24px;
-    width: 600px;
+.mais-info{
+	text-align: right;
 }
 
-/*Alinhar*/
-.centerfy{
-    margin-left: auto;
-    margin-right: auto;
+.mais-info a{
+    background: #cfd8dc;
+	color: black;
 }
