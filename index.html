@@ -1,14 +1,14 @@
 <html>
     <head>
         <title>Kelvin Seibt (the0wl)</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./styles/global.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="main">
             <div class="profile">
                 <div class="profile-picture">
-                    <img src="profile-picture.png" />
+                    <img src="./assets/profile-picture.png" />
                 </div>
                 <div class="profile-info">
                     <div class="name">
@@ -33,46 +33,83 @@
             </div>
 
             <div class="buttons">
-                <div class="button1">
-                    <span>Baixar currículo</span>
-                </div>
-                <div class="button2">
-                    <span>Contato</span>
-                </div>
+                <a href="./documents/Software developer Resume.pdf" target="_blank">
+                    <div class="button1">
+                        <span>Baixar currículo</span>
+                    </div>
+                </a>
+                <a href="./documents/contact-card.png" target="_blank">
+                    <div class="button2">
+                        <span>Contato</span>
+                    </div>
+                </a>
             </div>
 
             <div class="pages">
-                <div class="button1">
+                <div id="repositories" class="button1 selected" onclick="goToRepositoriesPage()">
                     <span>Repositórios</span>
                 </div>
-                <div class="button2">
+                <div id="habilities" class="button2" onclick="goToHabilitiesPage()">
                     <span>Habilidades</span>
                 </div>
             </div>
 
-            <div class="repositorios">
+            <div id="box-repositories" class="repositorios">
                 <div class="cards">
-                    <div class="card-1">
+                    <div id="repo_1" class="card-1">
 
                     </div>
-                    <div class="card-2">
+                    <div id="repo_2"class="card-2">
 
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="card-1">
+                    <div id="repo_3" class="card-1">
 
                     </div>
-                    <div class="card-2">
+                    <div id="repo_4" class="card-2">
 
                     </div>
                 </div>
                 <div class="cards">
-                    <div class="card-1">
+                    <div id="repo_5" class="card-1">
 
                     </div>
-                    <div class="card-2">
+                    <div id="repo_6" class="card-2">
 
+                    </div>
+                </div>
+            </div>
+
+            <div id="box-habilities" class="habilidades">
+                <div class="skill">
+                    <div class="titulo">Delphi</div>
+                    <div class="barra-delphi">
+                        <div class="f100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="titulo">SQL</div>
+                    <div class="barra-sql">
+                        <div class="f70"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="titulo">Desenvolvimento mobile</div>
+                    <div class="barra-mobile">
+                        <div class="f60"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="titulo">Análise de dados</div>
+                    <div class="barra-analise">
+                        <div class="f100"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="titulo">Comunicação e escrita</div>
+                    <div class="barra-comunicacao">
+                        <div class="f100"></div>
                     </div>
                 </div>
             </div>
@@ -82,4 +119,22 @@
             </div>
         </div>
     </body>
+    <script src="./js/repositories.js"></script>
+    <script>
+        function goToHabilitiesPage() {
+            document.getElementById("repositories").classList.remove("selected")
+            document.getElementById("habilities").classList.add("selected")
+
+            document.getElementById("box-habilities").style.display= 'block'
+            document.getElementById("box-repositories").style.display= 'none'
+        }
+
+        function goToRepositoriesPage() {
+            document.getElementById("habilities").classList.remove("selected")
+            document.getElementById("repositories").classList.add("selected")
+
+            document.getElementById("box-habilities").style.display= 'none'
+            document.getElementById("box-repositories").style.display= 'block'
+        }
+    </script>
 </html>

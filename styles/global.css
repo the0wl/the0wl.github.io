@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    background: #0D1116;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    position: relative;
+    width: 900px;
+    background: #0D1116;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    width: 350px;
+    height: 128px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-picture {
+    float: left;
+    width: 128px;
+    height: 128px;
+}
+
+.profile-picture img {
+    width: 128px;
+    height: 128px;
+}
+
+.profile-info {
+    float: right;
+    margin-left: 30px;
+    width: 190px;
+}
+
+.profile-info .name {
+    font-family: 'Poppins', sans-serif;
+    font-style: medium;
+    font-size: 32px;
+    line-height: 32px;
+    color: #F1F2F4;
+    margin-top: 32px;
+}
+
+.profile-info .position {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #A3ABB2;
+    margin-top: 14px;
+    margin-bottom: 32px;
+}
+
+.bio {
+    width: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bio .bio-info {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A3ABB2;
+    margin-top: 6px;
+}
+
+.buttons {
+    width: 380px;
+    height: 60px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.buttons .button1 {
+    float: left;
+
+    width: 180px;
+    height: 60px;
+    background: #FFE071;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+    color: #3D3D3D;
+
+    cursor: pointer;
+}
+
+.buttons .button1:hover{
+    background: #f7d66a;
+}
+
+.buttons .button2 {
+    float: right;
+
+    width: 180px;
+    height: 60px;
+    background: #171F26;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+    color: #A3ABB2;
+
+    cursor: pointer;
+}
+
+.buttons .button2:hover{
+    background: #151c23;
+}
+
+.pages {
+    width: 460px;
+    height: 80px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: #171F26;
+    border-radius: 10px;
+}
+
+.pages .button1 {
+    float: left;
+
+    width: 214px;
+    height: 60px;
+    border-radius: 10px;
+
+    margin: 10px;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+    color: #A3ABB2;
+
+    cursor: pointer;
+}
+
+.pages .button2 {
+    float: right;
+
+    width: 214px;
+    height: 60px;
+    border-radius: 10px;
+
+    margin: 10px;
+    margin-left: 0px;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+    color: #A3ABB2;
+
+    cursor: pointer;
+}
+
+.pages .selected {
+    background: #0D1116;
+}
+
+.repositorios {
+    width: 460px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.repositorios .cards {
+    width: 100%;
+    height: 128px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.repositorios .cards .card-1 {
+    float: left;
+    width: 214px;
+    height: 128px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.repositorios .cards .card-2 {
+    float: right;
+    width: 214px;
+    height: 128px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.habilidades {
+    width: 460px;
+    height: 474px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+.habilidades .skill {
+    width: 100%;
+    height: 79px;
+}
+
+.habilidades .skill .titulo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    color: #A3ABB2;
+}
+
+.habilidades .skill .barra-delphi {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 23px;
+    background-color: #171F26;
+}
+
+.habilidades .skill .barra-sql {
+    width: 100%;
+    height: 8px;
+    background-color: #171F26;
+}
+
+.habilidades .skill .barra-analise {
+    width: 100%;
+    height: 8px;
+    background-color: #171F26;
+}
+
+.habilidades .skill .barra-mobile {
+    width: 100%;
+    height: 8px;
+    background-color: #171F26;
+}
+
+.habilidades .skill .barra-webservice {
+    width: 100%;
+    height: 8px;
+    background-color: #171F26;
+}
+
+.habilidades .skill .barra-comunicacao {
+    width: 100%;
+    height: 8px;
+    background-color: #171F26;
+}
+
+.habilidades .skill .f60 {
+    width: 60%;
+    height: 8px;
+    background-color: #F7D66A;
+}
+
+.habilidades .skill .f70 {
+    width: 70%;
+    height: 8px;
+    background-color: #F7D66A;
+}
+
+.habilidades .skill .f80 {
+    width: 80%;
+    height: 8px;
+    background-color: #F7D66A;
+}
+
+.habilidades .skill .f100 {
+    width: 100%;
+    height: 8px;
+    background-color: #F7D66A;
+}
+
+.rodape {
+    width: 100%;
+
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 60px;
+    color: #A3ABB2;
+}
