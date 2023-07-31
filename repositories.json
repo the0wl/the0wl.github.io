@@ -2,45 +2,45 @@
   "repositories": [
     {
       "order": 1,
-      "title": "Telegram bot",
-      "link": "https://github.com/the0wl/Telegram-Bot",
-      "branch": "master",
-      "repositoryName": "Telegram-Bot"
+      "title": "API de transações (TypeScript)",
+      "link": "https://github.com/the0wl/nodejs-transactions-api",
+      "branch": "main/assets/project_image.jpg",
+      "repositoryName": "nodejs-transactions-api"
     },
     {
       "order": 2,
-      "title": "CMSIS_5-5.7.0",
+      "title": "CMSIS_5-5.7.0 (C)",
       "link": "https://github.com/the0wl/CMSIS_5-5.7.0",
-      "branch": "master",
+      "branch": "master/project_image.png",
       "repositoryName": "CMSIS_5-5.7.0"
     },
     {
       "order": 3,
       "title": "Minecraft (WEBGL)",
       "link": "https://github.com/the0wl/minecraft-webgl",
-      "branch": "master",
+      "branch": "master/project_image.png",
       "repositoryName": "minecraft-webgl"
     },
     {
       "order": 4,
-      "title": "Curso Flutter/Udemy",
-      "link": "https://github.com/the0wl/curso_flutter_udemy",
-      "branch": "main",
-      "repositoryName": "curso_flutter_udemy"
+      "title": "aws-dynamodb-crud",
+      "link": "https://github.com/the0wl/aws-dynamodb-crud",
+      "branch": "main/assets/dynamodb.jpg",
+      "repositoryName": "aws-dynamodb-crud"
     },
     {
       "order": 5,
-      "title": "Sistema de pedidos",
+      "title": "Sistema de pedidos (Delphi)",
       "link": "https://github.com/the0wl/SistemaDePedidoFinal",
-      "branch": "master",
+      "branch": "master/project_image.png",
       "repositoryName": "SistemaDePedidoFinal"
     },
     {
       "order": 6,
-      "title": "Projeto Growth",
-      "link": "https://github.com/the0wl/projeto-growth",
-      "branch": "master",
-      "repositoryName": "projeto-growth"
+      "title": "Telegram Bot (Java)",
+      "link": "https://github.com/the0wl/Telegram-Bot",
+      "branch": "master/project_image.png",
+      "repositoryName": "Telegram-Bot"
     }
   ]
 }

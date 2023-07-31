@@ -43,8 +43,7 @@ function createRepositoryElement(element) {
 function getImageFromRepository(element) {
   return 'https://raw.githubusercontent.com/the0wl/'
     .concat(`${element.repositoryName}/`)
-    .concat(`${element.branch}/`)
-    .concat('project_image.png')
+    .concat(`${element.branch}`)
 }
 
 loadRepositoriesData().then(data => {
