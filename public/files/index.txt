@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta name="author" content="Kelvin Isael Seibt">
+    <meta name="descrição" content="Desenvolvedor Full Stack">
+    <meta name="tecnologias" content="Javascript | TypeScript | Node | Delphi | NLP | NER">
+
+    <link rel="email" href="kelvin.seibt@gmail.com">
+    <link rel="linkedin" href="https://www.linkedin.com/in/kelvin-seibt/">
+  </head>
+  <body>
+    <h1>Olá, seja bem vindo!</h1>
+
+    <h2>Infelizmente você ainda não pode codar por aqui 😒</h2>
+
+    <h2>Mas tente explorar este site, quem sabe não se inspira e desenvolve a nova roda 😁</h2>
+  </body>
+</html>
