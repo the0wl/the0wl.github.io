@@ -17,6 +17,10 @@ const config: Config = {
         // OpenFiles
         'openFilesText': '#7D7D7D',
         'openFilesSelected': '#262626',
+
+        // Warnings
+        'warningText': '#000000',
+        'warningBg': '#f1c40f',
       }
     },
     fontFamily: {
