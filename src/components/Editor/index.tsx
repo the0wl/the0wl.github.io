@@ -7,7 +7,7 @@ function Editor() {
   const { files } = useContext(FilesContext);
 
   return (
-    <div className='flex flex-col flex-grow'>
+    <div className='flex h-screen flex-col flex-grow'>
       <OpenFiles />
 
       <div className='flex h-screen bg-[#1f1f1f]'>
