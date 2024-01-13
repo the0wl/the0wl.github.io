@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import OpenFiles, { FileType } from './OpenFiles';
+import React, { useContext } from 'react';
+import OpenFiles from './OpenFiles';
 import CodeComponent from './CodeComponent';
+import { FilesContext } from '../../contexts/FilesContext';
 
 function Editor() {
-  const [fileContent, setFileContent] = useState<string>('');
-  const [files, setFiles] = useState<FileType[]>([
-    { name: '.gitignore', focused: false },
-    { name: 'index.html', focused: true },
-    { name: 'package.json', focused: false },
-  ]);
-
-  useEffect(() => {
-    fetch('/files/index.txt')
-      .then(response => response.text())
-      .then(text => setFileContent(text))
-      .catch(error => console.error('Error fetching the text file:', error));
-  }, []);
+  const { files } = useContext(FilesContext);
 
   return (
     <div className='flex flex-col flex-grow'>
-      <OpenFiles files={files} setFiles={setFiles} />
+      <OpenFiles />
+
       <div className='flex h-screen bg-[#1f1f1f]'>
-        <CodeComponent code={fileContent} />
+        { 
+          files.findIndex(file => !file.closed) === -1
+            ? (<></>)
+            : files.map((file, index) => {
+              if(file.focused) {
+                return (
+                  <CodeComponent key={index} code={file.content} />
+                );
+              }
+            })
+        }
       </div>
     </div>
   );

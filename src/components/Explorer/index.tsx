@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { VscChevronRight  } from 'react-icons/vsc';
 import { FileIcon } from '../index';
+import { FilesContext } from '../../contexts/FilesContext';
 
-function Files() {
+function Explorer() {
+  const { files, setFiles } = useContext(FilesContext);
+
+  const handleOnClick = function (e: React.MouseEvent, fileName: string) {
+    e.preventDefault();
+
+    const filePos = files.findIndex(file => file.name === fileName);
+
+    const newFiles = files.map((file, index) => ({
+      ...file, 
+      closed: index === filePos ? false : file.closed,
+      focused: index === filePos
+    }));
+
+    setFiles(newFiles);
+  };
+
   return (
     <div className='flex flex-col w-64 h-screen bg-primary font-Inter text-menuText'>
-      
       <div className='flex h-9 items-center pl-4 cursor-default'>
         <span className='text-sm'>Portifólio Studio Code</span>
       </div>
@@ -20,29 +36,23 @@ function Files() {
         <span className='text-sm leading-8'>.github</span>
       </div>
 
-      <div className='flex h-8 hover:bg-menuHover cursor-pointer'>
-        <div className='flex items-center pl-8 pr-2'>
-          <FileIcon isFolder={false} filename='.gitignore'/>
-        </div>
-        <span className='text-sm leading-8'>.gitignore</span>
-      </div>
-
-      <div className='flex h-8 hover:bg-menuHover cursor-pointer'>
-        <div className='flex items-center pl-8 pr-2'>
-          <FileIcon isFolder={false} filename='index.html'/>
-        </div>
-        <span className='text-sm leading-8'>index.html</span>
-      </div>
-
-      <div className='flex h-8 hover:bg-menuHover cursor-pointer'>
-        <div className='flex items-center pl-8 pr-2'>
-          <FileIcon isFolder={false} filename='package.json'/>
-        </div>
-        <span className='text-sm leading-8'>package.json</span>
-      </div>
-
+      { 
+        files.map((file, index) => {
+          return (
+            <div 
+              key={index} 
+              className='flex h-8 hover:bg-menuHover cursor-pointer'
+              onClick={(e) => handleOnClick(e, file.name)}>
+              <div className='flex items-center pl-8 pr-2'>
+                <FileIcon isFolder={false} filename={file.name} />
+              </div>
+              <span className='text-sm leading-8'>{file.name}</span>
+            </div>
+          );
+        })
+      }
     </div>
   );
 }
 
-export default Files;
+export default Explorer;
