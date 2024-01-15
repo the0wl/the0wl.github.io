@@ -1,10 +1,14 @@
 import React, { createContext, useEffect, useState } from 'react';
+import filesData from '../data/file-structure.json';
 
 export type FileType = {
   name: string;
   closed: boolean, 
   focused: boolean;
   content: string;
+  isFolder: boolean;
+  folder: string;
+  hide: boolean;
 }
 
 type FilesContextType = {
@@ -17,11 +21,7 @@ type FilesProviderType = { children: React.ReactNode}
 export const FilesContext = createContext({} as FilesContextType);
 
 export function FilesProvider({ children }: FilesProviderType) {
-  const [files, setFiles] = useState<FileType[]>([
-    { name: '.gitignore', closed: false, focused: false, content: '' },
-    { name: 'index.html', closed: false, focused: true, content: '' },
-    { name: 'package.json', closed: false, focused: false, content: '' },
-  ]);
+  const [files, setFiles] = useState<FileType[]>(filesData);
 
   useEffect(() => {
     for (const file of files) {

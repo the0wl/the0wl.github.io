@@ -1,18 +1,19 @@
 import React, { useContext } from 'react';
 import { FileIcon } from '../../index';
 import { VscChromeClose } from 'react-icons/vsc';
-import { FilesContext } from '../../../contexts/FilesContext';
+import { FileType, FilesContext } from '../../../contexts/FilesContext';
 
 function OpenFiles() {
   const { files, setFiles } = useContext(FilesContext);
   
-  const handleOnFocus = function (e: React.MouseEvent, fileName: string) {
+  const handleOnFocus = function (e: React.MouseEvent, selectedFile: FileType) {
     e.preventDefault();
 
     setFiles(
       files.map(file => ({
         ...file, 
-        focused: file.name === fileName
+        focused: file.name === selectedFile.name,
+        hide: file.hide ? ![selectedFile.name, selectedFile.folder].includes(file.name) : file.hide
       }))
     );
   };
@@ -46,12 +47,12 @@ function OpenFiles() {
   return (
     <div className='flex font-Inter h-9'>
       { files.map((file, index) => {
-        if (!file.closed) return (
+        if (!file.closed && !file.isFolder) return (
           <div 
             className={`flex h-full items-center ${file.focused ? 'bg-openFilesSelected' : ''}`}
             key={index}>
             <div
-              onClick={(e) => handleOnFocus(e, file.name)}
+              onClick={(e) => handleOnFocus(e, file)}
               className='flex h-full items-center pl-3 text-sm cursor-pointer'>
           
               <div className='flex items-center pr-2'>

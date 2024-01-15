@@ -2,6 +2,7 @@ import React from 'react';
 import { IoLogoHtml5 } from 'react-icons/io';
 import { FaGitAlt } from 'react-icons/fa';
 import { VscError, VscFolder, VscJson } from 'react-icons/vsc';
+import { TbHexagonLetterY } from 'react-icons/tb';
 
 export type FileIconProps = {
   isFolder: boolean;
@@ -19,6 +20,7 @@ function FileIcon(props: FileIconProps) {
   case 'html': return <span className='text-orange-500'><IoLogoHtml5 /></span>;
   case 'gitignore': return <span className='text-red-500'><FaGitAlt /></span>;
   case 'json': return <span className='text-blue-500'><VscJson /></span>;
+  case ('yml' || 'yaml' ): return <span className='text-purple-400'><TbHexagonLetterY /></span>;
   case '': return <span className='text-red-500'><VscError /></span>;
   default: return <span className='text-red-500'><VscError /></span>;
   }
