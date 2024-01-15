@@ -9,6 +9,7 @@ const config: Config = {
       colors: {
         // Application
         'primary': '#1A1A1A',
+        'contrast': '#2ECC71',
         
         // Menu
         'menuText': '#7D7D7D',
@@ -17,10 +18,6 @@ const config: Config = {
         // OpenFiles
         'openFilesText': '#7D7D7D',
         'openFilesSelected': '#262626',
-
-        // Warnings
-        'warningText': '#000000',
-        'warningBg': '#f1c40f',
       }
     },
     fontFamily: {
