@@ -1,4 +1,10 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Pessoal
+.quem_toma_cafe_com_acucar
+.estagnacao
+.procrastinacao
+.sindrome_do_impostor
+
+# Empresa
+.trabalho_presencial
+.lideres_ruins
+.salario_abaixo_da_media

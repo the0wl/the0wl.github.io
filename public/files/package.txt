@@ -1,5 +1,14 @@
 {
-  "name": "the0wl.github.io",
-  "version": "0.1.0",
-  "private": true
+  "name": "Kelvin Isael Seibt",
+  "version": "24",
+  "bugs": "Não, apenas features",
+  "repository": "https://github.com/the0wl",
+  "dependencies": {
+    "👧": "namorada",
+    "🐶": "cachorro"
+  },
+  "workspaces": {
+    "name: "Casa",
+    "workspaces": ["Venâncio Aires, RS - Brasil"]
+  }
 }

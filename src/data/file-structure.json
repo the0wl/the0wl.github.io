@@ -1,0 +1,47 @@
+[
+  { 
+    "name": ".github > workflows", 
+    "closed": false, 
+    "focused": false, 
+    "content": "",
+    "isFolder": true,
+    "folder": "",
+    "hide": false
+  },
+  { 
+    "name": "projects.yml", 
+    "closed": false, 
+    "focused": false, 
+    "content": "",
+    "isFolder": false,
+    "folder": ".github > workflows",
+    "hide": false
+  },
+  { 
+    "name": ".gitignore", 
+    "closed": false, 
+    "focused": false, 
+    "content": "",
+    "isFolder": false,
+    "folder": "",
+    "hide": false
+  },
+  { 
+    "name": "index.html", 
+    "closed": false, 
+    "focused": true, 
+    "content": "",
+    "isFolder": false,
+    "folder": "",
+    "hide": false
+  },
+  { 
+    "name": "package.json", 
+    "closed": false, 
+    "focused": false, 
+    "content": "",
+    "isFolder": false,
+    "folder": "",
+    "hide": false
+  }
+]

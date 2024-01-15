@@ -1,0 +1,11 @@
+portfolio:
+  - repository:
+      name: Nome_do_Repositorio_1
+      url: "https://github.com/seu_nome_de_usuario/Nome_do_Repositorio_1"
+      description: "Breve descrição do projeto 1"
+      technologies: ["Tecnologia 1", "Tecnologia 2", "Tecnologia 3"]
+  - repository:
+      name: Nome_do_Repositorio_2
+      url: "https://github.com/seu_nome_de_usuario/Nome_do_Repositorio_2"
+      description: "Breve descrição do projeto 2"
+      technologies: ["Tecnologia 1", "Tecnologia 2", "Tecnologia 3"]
