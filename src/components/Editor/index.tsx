@@ -8,7 +8,7 @@ function Editor() {
   const { files } = useContext(FilesContext);
 
   return (
-    <div className='flex h-screen flex-col flex-grow font-Inter text-menuText'>
+    <div className='flex h-screen flex-col flex-grow font-Inter'>
       <OpenFiles />
 
       <div className='flex h-screen bg-[#1f1f1f]'>
@@ -25,7 +25,7 @@ function Editor() {
         }
       </div>
 
-      <div className='flex h-5 pr-3 gap-4 items-center justify-end bg-primary'>  
+      <div className='flex h-5 pr-3 gap-4 items-center justify-end bg-primary text-menuText'>  
         <div className='flex h-full items-center'>
           <span className='text-xs'>Ln 1, Col 1</span>
         </div>
