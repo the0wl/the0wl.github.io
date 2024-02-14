@@ -2,46 +2,36 @@
   "name": "the0wl.github.io",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "build-css": "npx tailwind build src/index.css -o src/tailwind.css"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@types/json-schema": "^7.0.15",
-    "eslint": "latest",
-    "postcss": "latest",
-    "react": "latest",
+    "react": "^18.2.0",
     "react-dom": "latest",
     "react-icons": "latest",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "latest",
     "@types/highlight.js": "latest",
     "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@typescript-eslint/eslint-plugin": "latest",
-    "@typescript-eslint/parser": "latest",
-    "autoprefixer": "latest",
-    "eslint-plugin-react": "latest",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "latest",
-    "tailwindcss": "latest",
-    "typescript": "latest"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0"
   }
 }

@@ -1,3 +1,4 @@
+import Loading from './Loading';
 import Main from './Main';
 
-export { Main };
+export { Main, Loading };

@@ -49,7 +49,8 @@ function OpenFiles() {
       { files.map((file, index) => {
         if (!file.closed && !file.isFolder) return (
           <div 
-            className={`flex h-full items-center ${file.focused ? 'bg-openFilesSelected' : ''}`}
+            className={`flex h-full select-none items-center 
+              ${file.focused ? 'bg-openFilesSelected' : ''}`}
             key={index}>
             <div
               onClick={(e) => handleOnFocus(e, file)}
