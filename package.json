@@ -16,7 +16,6 @@
     "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
-    "@types/highlight.js": "latest",
     "@types/node": "latest",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",

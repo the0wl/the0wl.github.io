@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoLogoHtml5 } from 'react-icons/io';
 import { FaGitAlt } from 'react-icons/fa';
 import { VscError, VscFolder, VscJson } from 'react-icons/vsc';

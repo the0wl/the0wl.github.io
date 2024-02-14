@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import OpenFiles from './OpenFiles';
 import CodeComponent from './CodeComponent';
 import { FilesContext } from '../../contexts/FilesContext';

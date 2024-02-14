@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { FilesContext } from '../../contexts/FilesContext';
 import ExplorerItem from './ExplorerItem';
 import { VscCode, VscError, VscWarning, VscSourceControl } from 'react-icons/vsc';
