@@ -1,11 +1,31 @@
 portfolio:
-  - repository:
-      name: Nome_do_Repositorio_1
-      url: "https://github.com/seu_nome_de_usuario/Nome_do_Repositorio_1"
-      description: "Breve descrição do projeto 1"
-      technologies: ["Tecnologia 1", "Tecnologia 2", "Tecnologia 3"]
-  - repository:
-      name: Nome_do_Repositorio_2
-      url: "https://github.com/seu_nome_de_usuario/Nome_do_Repositorio_2"
-      description: "Breve descrição do projeto 2"
-      technologies: ["Tecnologia 1", "Tecnologia 2", "Tecnologia 3"]
+    - repository:
+        name: pomodoro
+        url: "https://github.com/the0wl/pomodoro"
+        description: "Aplicativo para foco desenvolvido em Rust e Typescript"
+        technologies: [ "Rust", "TypeScript", "Tauri", "NextJS", "TailwindCSS" ]
+    - repository:
+        name: rabbitmq-playground
+        url: "https://github.com/the0wl/rabbitmq-playground"
+        description: "Repositório para colocar em prática o uso de RabbitMQ como sistema de mensageria"
+        technologies: [ "JavaScript", "RabbitMQ" ]
+    - repository: 
+        name: aws-dynamodb-crud
+        url: "https://github.com/the0wl/aws-dynamodb-crud"
+        description: "Estudo de caso da utilização do banco NoSQL DynamoDB"
+        technologies: [ "javascript", "html", "threejs" ]
+    - repository:
+        name: the0wl.github.io
+        url: "https://github.com/the0wl/the0wl.github.io"
+        description: "Site de portifólio"
+        technologies: [ "Typescript", "TailwindCSS", "Vite" ]
+    - repository:
+        name: minecraft-webgl
+        url: "https://github.com/the0wl/minecraft-webgl"
+        description: "Clone do jogo Minecraft usando a biblioteca ThreeJS"
+        technologies: [ "javascript", "html", "threejs" ]
+    - repository:
+        name: CMSIS_5-5.7.0
+        url: "https://github.com/the0wl/CMSIS_5-5.7.0"
+        description: "Comparação de desempenho em implementações multi-threads na linguagem C"
+        technologies: [ "C", "omp", "pthread", "mpi" ]
